@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InitTestProject-Swift.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
+        
+        [SomeClass new]; // No compiler warning.
     }
     return 0;
 }

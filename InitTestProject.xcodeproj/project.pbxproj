@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2306819C1D7F3C15008BE753 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2306819B1D7F3C15008BE753 /* main.m */; };
+		230681A41D7F3C7E008BE753 /* SomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230681A31D7F3C7E008BE753 /* SomeClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		230681981D7F3C15008BE753 /* InitTestProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InitTestProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		2306819B1D7F3C15008BE753 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		230681A21D7F3C7E008BE753 /* InitTestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InitTestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		230681A31D7F3C7E008BE753 /* SomeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2306819B1D7F3C15008BE753 /* main.m */,
+				230681A31D7F3C7E008BE753 /* SomeClass.swift */,
+				230681A21D7F3C7E008BE753 /* InitTestProject-Bridging-Header.h */,
 			);
 			path = InitTestProject;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 					230681971D7F3C15008BE753 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6GLM9BJ33V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230681A41D7F3C7E008BE753 /* SomeClass.swift in Sources */,
 				2306819C1D7F3C15008BE753 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,16 +224,25 @@
 		230681A01D7F3C15008BE753 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6GLM9BJ33V;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InitTestProject/InitTestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		230681A11D7F3C15008BE753 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6GLM9BJ33V;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InitTestProject/InitTestProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
